@@ -1,0 +1,6 @@
+# Wagon Car ID Details - Currently set to number and status, i.e Empty or Full
+
+7890, Empty
+11299, Full
+34350, Empty
+8900, Full
