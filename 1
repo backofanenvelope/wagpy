@@ -1,0 +1,14 @@
+# Basic program
+import csv
+import random
+
+fname = 'carid.csv'
+
+def opencsvfile(fname):
+    with open(fname) as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    for row in reader:
+        print(row)
+
+opencsvfile(fname)
+

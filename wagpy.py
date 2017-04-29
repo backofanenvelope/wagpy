@@ -2,7 +2,14 @@
 import csv
 import random
 
-with open('carid.csv') as csvfile:
-    reader = csv.reader(csvfile, delimiter=',')
-    for row in reader:
-        print(row)
+fname = 'carid.csv'
+
+def csvtolist(fname):
+    with open(fname) as csvfile:
+        reader = csv.reader(csvfile, delimiter=',')
+        reader.__next__()
+        for row in reader:
+            carlist = list(reader)
+        print(carlist)
+
+csvtolist(fname)
